@@ -1,0 +1,10 @@
+.btn-filter {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.btn-filter__element:not(:first-child) {
+  margin-left: 8px;
+}

@@ -1,0 +1,110 @@
+// .client-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   margin-left: -30px;
+//   margin-top: -30px;
+// }
+// .client-list > .client-list__item {
+//   flex-basis: calc(100% / 6 - 30px);
+//   margin-left: 30px;
+//   margin-top: 30px;
+// }
+// .client-list__link {
+//   display: flex;
+//   width: 170px;
+//   height: 90px;
+//   align-items: center;
+//   justify-content: center;
+//   border: 1px solid #afb1b8;
+//   border-radius: 4px;
+//   transition: border-color var(--transtime-duration) var(--transtiming-function);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//     border-color: var(--accent-color);
+//   }
+// }
+
+// .client-list__logo {
+//   width: 106px;
+//   height: 60px;
+//   fill: #afb1b8;
+//   transition: fill var(--transtime-duration) var(--transtiming-function);
+
+//   .client-list__link:hover &,
+//   .client-list__link:focus & {
+//     fill: var(--accent-color);
+//   }
+// }
+
+//320+
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.client-list__item {
+  flex-basis: calc(100% / 2 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.client-list__link {
+  display: flex;
+  width: 210px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border-color var(--transtime-duration) var(--transtiming-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+@media screen and (max-width: 479px) {
+  .clients-title {
+    font-size: 26px;
+  }
+  .client-list__link {
+    width: 130px;
+  }
+}
+
+.client-list__logo {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+  transition: fill var(--transtime-duration) var(--transtiming-function);
+
+  .client-list__link:hover &,
+  .client-list__link:focus & {
+    fill: var(--accent-color);
+  }
+}
+//768+
+@media screen and (min-width: 768px) {
+  .client-list__item {
+    flex-basis: calc(100% / 3 - 60px);
+  }
+  .client-list__link {
+    width: 226px;
+  }
+}
+
+//1200+
+@media screen and (min-width: 1200px) {
+  .client-list__item {
+    flex-basis: calc(100% / 6 - 30px);
+  }
+  .client-list__link {
+    width: 170px;
+    height: 90px;
+  }
+}

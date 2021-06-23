@@ -1,0 +1,104 @@
+//320+
+.hero {
+  margin: 0 auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: var(--footer-color);
+  text-align: center;
+  max-width: 480px;
+  min-height: 400px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/bcg/bcg-photo-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/bcg/bcg-photo-mobile@2x.jpg');
+  }
+}
+
+.hero-title {
+  max-width: 360px;
+  margin: 0 auto 30px;
+
+  @include style-text(26px, 900, 42px);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+//768+
+@media screen and (min-width: 768px) {
+ .hero {
+    min-height: 400px;
+    max-width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/bcg/bcg-photo-tablet.jpg');
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(81, 88, 163, 0.4)
+        ),
+        url('../images/bcg/bcg-photo-tablet@2x.jpg');
+    }
+  } 
+}
+
+//1200+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    min-height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/bcg/bcg-photo.jpg');
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(81, 88, 163, 0.4)
+        ),
+        url('../images/bcg/bcg-photo@2x.jpg');
+    }
+  }
+  .hero-title {
+    max-width: 696px;
+    margin: 0 auto 30px;
+
+    @include style-text(44px, 900, 60px);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+  }
+}
+

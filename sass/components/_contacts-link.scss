@@ -1,0 +1,96 @@
+@media screen and (max-width: 767px) {
+  .contacts__link.mobile-menu__phone {
+    @media screen and (max-width: 379px) {
+      font-size: 22px;
+    }
+    @include style-text(34px, 500, 40px);
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+    transition: color var(--transtime-duration) var(--transtiming-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .contacts__link.mobile-menu__mail {
+    @media screen and (max-width: 379px) {
+      font-size: 22px;
+    }
+    @include style-text(24px, 500, 28px);
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+    transition: color var(--transtime-duration) var(--transtiming-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+//768+
+.contacts__link {
+  @include style-text(12px, 500, 14px);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  transition: color var(--transtime-duration) var(--transtiming-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contacts__link_grey {
+  color: var(--address-text-color);
+}
+
+.contacts__link_align {
+  display: flex;
+  align-items: center;
+}
+.contacts__icon-mail {
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
+  fill: currentColor;
+  transition: fill var(--transtime-duration) var(--transtiming-function);
+
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.contacts__icon-phone {
+  width: 10px;
+  height: 14px;
+  margin-right: 8px;
+  fill: currentColor;
+  transition: fill var(--transtime-duration) var(--transtiming-function);
+
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+//1200+
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    @include style-text(14px, 500, 16px);
+  }
+  .contacts__icon-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+  .contacts__icon-phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}

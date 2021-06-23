@@ -1,0 +1,106 @@
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-bcg-color);
+    overflow: auto;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+  .mobile-menu__container {
+    position: relative;
+    padding-left: 25px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .mobile-menu__btn-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+  }
+  .mobile-menu__btn-close:hover .mobile-menu__icon-btn-close,
+  .mobile-menu__btn-close:focus .mobile-menu__icon-btn-close {
+    fill: var(--accent-color);
+  }
+  // .mobile-menu__main-info {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  // }
+  .mobile-menu__nav {
+    padding-bottom: 64px;
+  }
+  .mobile-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .mobile-menu__link {
+    @media screen and (max-width: 379px) {
+      font-size: 26px;
+    }
+    @include style-text(40px, 500, 47px);
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color);
+    transition: color var(--transtime-duration) var(--transtiming-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+
+    &.current {
+      color: var(--accent-color);
+    }
+  }
+  .mobile-menu__contacts-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .mobile-menu__social-list {
+    display: inline-flex;
+    align-items: baseline;
+    padding-top: 64px;
+  }
+  .mobile-menu__social-link {
+    @media screen and (max-width: 379px) {
+      font-size: 12px;
+    }
+    @include style-text(18px, 500, 22px);
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+    transition: color var(--transtime-duration) var(--transtiming-function);
+
+    &:hover,
+    &:focus {
+      color: var(--button-hover-color);
+    }
+  }
+  .vertical-line {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: rgba(33, 33, 33, 0.2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu__btn-close {
+    display: none;
+  }
+}

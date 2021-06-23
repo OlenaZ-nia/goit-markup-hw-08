@@ -1,10 +1,29 @@
 .btn-filter {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -15px;
+  margin-left: -8px;
+  margin-bottom: 40px;
+  // justify-content: center;
 }
 
-.btn-filter__element:not(:first-child) {
+.btn-filter__element {
+  margin-top: 15px;
   margin-left: 8px;
 }
+
+@media screen and (min-width: 768px) {
+  .btn-filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-filter {
+    margin-bottom: 50px;
+  }
+}
+
+// .btn-filter__element:not(:first-child) {
+//   margin-left: 8px;
+// }

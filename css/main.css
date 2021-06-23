@@ -115,6 +115,7 @@ body.modal-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    z-index: 99;
   }
   .mobile-menu__container {
     position: relative;
@@ -703,9 +704,9 @@ body.modal-open {
 .btn-item {
   padding: 6px 22px;
   font-family: inherit;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  font-weight: 500;
+  line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -1242,13 +1243,28 @@ body.modal-open {
 
 .btn-filter {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -15px;
+  margin-left: -8px;
+  margin-bottom: 40px;
 }
 
-.btn-filter__element:not(:first-child) {
+.btn-filter__element {
+  margin-top: 15px;
   margin-left: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-filter {
+    margin-bottom: 50px;
+  }
 }
 
 .project {
@@ -1258,10 +1274,22 @@ body.modal-open {
   margin-left: -30px;
 }
 
-.project > .project__element {
-  flex-basis: calc(100% / 3 - 30px);
+.project__element {
+  width: 100%;
   margin-bottom: 30px;
   margin-left: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .project__element {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project__element {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .project__link {
@@ -1277,13 +1305,31 @@ body.modal-open {
   overflow: hidden;
 }
 
+@media screen and (max-width: 479px) {
+  .project__img {
+    width: 290px;
+  }
+}
+
 .project__desc {
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   color: var(--title-text-color);
   background-color: rgba(33, 150, 243, 0.9);
+}
+
+@media screen and (min-width: 768px) {
+  .project__desc {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project__desc {
+    padding: 63px 24px;
+  }
 }
 
 .overlay {
@@ -1307,6 +1353,12 @@ body.modal-open {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project__item {
+    padding: 56px 24px;
+  }
 }
 
 .project__title {

@@ -5,8 +5,8 @@
   padding-bottom: 118px;
   background-color: var(--footer-color);
   text-align: center;
-  max-width: 480px;
-  min-height: 400px;
+  // max-width: 480px;
+  // min-height: 400px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -41,9 +41,9 @@
 
 //768+
 @media screen and (min-width: 768px) {
- .hero {
-    min-height: 400px;
-    max-width: 768px;
+  .hero {
+    // min-height: 400px;
+    // max-width: 768px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -62,7 +62,7 @@
         ),
         url('../images/bcg/bcg-photo-tablet@2x.jpg');
     }
-  } 
+  }
 }
 
 //1200+
@@ -70,8 +70,8 @@
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
-    min-height: 600px;
+    // max-width: 1600px;
+    // min-height: 600px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -101,4 +101,3 @@
     color: var(--title-text-color);
   }
 }
-

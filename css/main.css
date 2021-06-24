@@ -58,13 +58,8 @@ p {
 
 img {
   display: block;
-}
-
-@media screen and (max-width: 479px) {
-  img {
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  height: auto;
 }
 
 body {
@@ -119,7 +114,7 @@ body.modal-open {
   }
   .mobile-menu__container {
     position: relative;
-    padding-left: 25px;
+    padding-left: 40px;
     padding-top: 48px;
     padding-bottom: 48px;
   }
@@ -139,7 +134,7 @@ body.modal-open {
     fill: var(--accent-color);
   }
   .mobile-menu__nav {
-    padding-bottom: 64px;
+    padding-bottom: 302px;
   }
   .mobile-menu__item:not(:last-child) {
     margin-bottom: 32px;
@@ -837,8 +832,6 @@ body.modal-open {
   padding-bottom: 118px;
   background-color: var(--footer-color);
   text-align: center;
-  max-width: 480px;
-  min-height: 400px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bcg/bcg-photo-mobile.jpg");
   background-size: cover;
   background-position: center;
@@ -863,8 +856,6 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .hero {
-    min-height: 400px;
-    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bcg/bcg-photo-tablet.jpg");
   }
 }
@@ -879,8 +870,6 @@ body.modal-open {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
-    min-height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bcg/bcg-photo.jpg");
   }
 }
@@ -1303,12 +1292,6 @@ body.modal-open {
 .project__link-wrapper {
   position: relative;
   overflow: hidden;
-}
-
-@media screen and (max-width: 479px) {
-  .project__img {
-    width: 290px;
-  }
 }
 
 .project__desc {

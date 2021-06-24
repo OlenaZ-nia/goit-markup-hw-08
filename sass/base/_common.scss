@@ -29,10 +29,12 @@ p {
 
 img {
   display: block;
-  @media screen and (max-width: 479px) {
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  height: auto;
+  // @media screen and (max-width: 479px) {
+  //   width: 100%;
+  //   height: auto;
+  // }
 }
 
 body {

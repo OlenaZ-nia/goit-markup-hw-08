@@ -938,7 +938,7 @@ body.modal-open {
     margin-top: -30px;
   }
   .features-list__item {
-    flex-basis: calc(100% / 2 - 60px);
+    flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
   }
@@ -952,7 +952,7 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .features-list__item {
-    flex-basis: calc(100% / 4 - 90px);
+    flex-basis: calc(100% / 4 - 30px);
   }
   .features-list__icon {
     min-width: 270px;
@@ -1052,7 +1052,7 @@ body.modal-open {
     margin-left: -30px;
   }
   .team-cards__element {
-    flex-basis: calc(100% / 2 - 60px);
+    flex-basis: calc(100% / 2 - 30px);
     margin-top: 30px;
     margin-left: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1066,24 +1066,35 @@ body.modal-open {
   }
 }
 
-.client-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+@media screen and (max-width: 479px) {
+  .client-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .clients-title {
+    font-size: 26px;
+  }
+  .client-list__link {
+    min-width: 210px;
+  }
 }
 
-.client-list__item {
-  flex-basis: calc(100% / 2 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-  align-self: center;
-  display: block;
+@media screen and (min-width: 480px) {
+  .client-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .client-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .client-list__link {
   display: flex;
-  width: 210px;
+  min-width: 210px;
   height: 92px;
   margin: 0 auto;
   align-items: center;
@@ -1096,15 +1107,6 @@ body.modal-open {
 .client-list__link:hover, .client-list__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
-}
-
-@media screen and (max-width: 479px) {
-  .clients-title {
-    font-size: 26px;
-  }
-  .client-list__link {
-    width: 130px;
-  }
 }
 
 .client-list__logo {
@@ -1121,10 +1123,10 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .client-list__item {
-    flex-basis: calc(100% / 3 - 60px);
+    flex-basis: calc(100% / 3 - 30px);
   }
   .client-list__link {
-    width: 226px;
+    min-width: 226px;
   }
 }
 
@@ -1133,7 +1135,7 @@ body.modal-open {
     flex-basis: calc(100% / 6 - 30px);
   }
   .client-list__link {
-    width: 170px;
+    min-width: 170px;
     height: 90px;
   }
 }
